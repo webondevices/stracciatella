@@ -1,0 +1,59 @@
+html,
+body,
+main,
+div,
+span,
+a,
+p,
+section,
+article {
+  font-family: var(--font-primary);
+  color: var(--text);
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-primary);
+  color: var(--accent-dark);
+  font-weight: 800;
+  margin: 0;
+}
+
+h1 {
+  font-size: 120px;
+}
+
+h2 {
+  font-size: 60px;
+}
+
+p {
+  margin-bottom: calc(var(--unit) * 2);
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-y: auto;
+
+  &.modal-open {
+    overflow: hidden;
+  }
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background);
+  color: var(--text);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}

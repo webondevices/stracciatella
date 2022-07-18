@@ -1,0 +1,26 @@
+:root {
+  /* Colors */
+  --primary: #{$str-green};
+  --accent: #{$str-brown};
+  --accent-dark: #{$str-dark-brown};
+  --light: #{$str-cream};
+  --background: #{$str-white};
+  --text: #{$str-black};
+
+  /* Fonts */
+  --font-primary: #{$helvetica};
+
+  /* Breakpoints */
+  --tablet: #{$str-tablet};
+  --laptop: #{$str-laptop};
+  --desktop: #{$str-desktop};
+
+  --unit: #{$unit};
+}
+
+body.dark {
+  --background: #{$str-black};
+  --text: #{$str-white};
+  --light: #{$str-dark-brown};
+  --accent-dark: #{$str-cream};
+}

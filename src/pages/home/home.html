@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script>
+    window.CONFIG = {
+      components: [],
+    };
+  </script>
+  <include src="static-components/head/head.html">
+    {
+      "title_text": "Home Page"
+    }
+  </include>
+</head>
+
+<body>
+  <main>
+    <section class="home__hero str-flex-center">
+      <h1>Stracciatella</h1>
+    </section>
+
+    <section class="home__introduction global__container--narrow">
+      <h2>Hello!</h2>
+      <p>Why complicate things when you can keep it simple?</p>
+
+      <include src="components/button/button-primary.html">
+        {
+          "text": "Open Modal",
+          "class": "home__open-modal"
+        }
+      </include>
+
+      <include src="components/theme-toggle/theme-toggle.html">
+        {
+          "class": "home__theme-toggle"
+        }
+      </include>
+
+      <include src="static-components/horizontal-rule/horizontal-rule.html"></include>
+
+      <p>Download boilerplate from github.com/webondevices</p>
+      
+      <module href="src/components/modal/modal.html" locals='{"id": "info-modal"}'>
+        <p>I don't think I have anything else to say...</p>
+
+        <include src="components/button/button-primary.html">
+          {
+            "text": "Close Modal",
+            "class": "home__close-modal"
+          }
+        </include>
+      </module>
+    </section>
+  </main> 
+</body>
+
+</html>

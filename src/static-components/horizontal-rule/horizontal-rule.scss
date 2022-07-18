@@ -1,0 +1,7 @@
+.str-horizontal-rule {
+  height: 2px;
+  width: 100%;
+  margin: calc(var(--unit) * 4) 0;
+  border: none;
+  background-color: var(--accent);
+}

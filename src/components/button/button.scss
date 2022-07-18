@@ -1,0 +1,40 @@
+@mixin default-button {
+  margin: 0;
+  height: calc(var(--unit) * 4);
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  border-radius: var(--unit);
+  color: var(--background);
+  min-width: 200px;
+  font-size: 18px;
+  text-transform: uppercase;
+  transition: background-color 300ms, transform 300ms, opacity 300ms;
+  background-color: var(--text);
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &:active {
+    opacity: 0.6;
+    transform: scale(0.9);
+  }
+}
+
+.str-button {
+  @include default-button;
+
+  &--primary {
+    @include default-button;
+    background-color: var(--primary);
+    color: var(--background);
+  }
+
+  &--secondary {
+    @include default-button;
+    background-color: var(--text);
+    color: var(--background);
+  }
+}

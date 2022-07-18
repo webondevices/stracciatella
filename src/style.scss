@@ -1,0 +1,21 @@
+// Theme
+@import "./theme/variables.scss";
+@import "./theme/normalize.scss";
+@import "./theme/theme.scss";
+@import "./theme/base.scss";
+
+// Global styles
+@import "./global/containers.scss";
+
+// Static styles
+@import "./static-styles/flex/flex.scss";
+
+// Static components
+@import "./static-components/horizontal-rule/horizontal-rule.scss";
+
+// Components
+@import "./components/modal/modal.scss";
+@import "./components/button/button.scss";
+
+// Pages
+@import "./pages/home/home.scss";

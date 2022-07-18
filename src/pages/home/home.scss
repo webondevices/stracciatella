@@ -1,0 +1,22 @@
+.home {
+  &__hero {
+    width: 100%;
+    height: 100vh;
+    background-image: url("/src/assets/images/stracciatella.jpg");
+    background-size: cover;
+    overflow: hidden;
+  }
+
+  &__introduction {
+    padding: calc(var(--unit) * 4);
+    background-color: var(--light);
+    margin-top: calc(var(--unit) * 4);
+    margin-bottom: calc(var(--unit) * 4);
+  }
+
+  &__theme-toggle {
+    position: fixed;
+    right: calc(var(--unit) * 4);
+    top: calc(var(--unit) * 4);
+  }
+}
